@@ -17,7 +17,7 @@ const defaultConfig = [
  * @param {*} history 通过useHistory()获取的history对象
  * @param {*} config 配置信息
  */
-export default function useSlide(history, config) {
+export default function useChangeRouterByDraging(history, config) {
   useEffect(() => {
     let isDraging = false;
     let direction = "none";
