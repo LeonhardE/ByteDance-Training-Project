@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: false }))
 app.all('*', function (req, res, next) {
   // 解决跨域访问的问题
   res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "X-Requested-With");
+  res.header("Access-Control-Allow-Headers", "X-Requested-With, content-type");
   // 允许请求资源的方式
   res.header("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");
   res.header("X-Powered-By", ' 3.2.1');
@@ -46,6 +46,7 @@ app.get('/defaultinfo', function(req, res) {
 
 app.post('/setproperty', (req, res) => {
   // 根据选择的性别和年龄更新推荐信息
+  console.log("req-", req)
   console.log("req", req.body)
   let form = new multiparty.Form()
   candidateNames = ['a','b']
