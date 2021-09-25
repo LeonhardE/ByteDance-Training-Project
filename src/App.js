@@ -1,15 +1,13 @@
 import ResourcePage from "./components/ResourcePage";
 import HomePage from "./home";
 import Friend from "./friend";
-import {
-  Route,
-  useHistory,
-} from "react-router-dom";
+import { Route, Redirect, useHistory } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
 import { useEffect } from "react";
 
 const routes = [
-  { path: "/", name: "HomePage", Component: HomePage },
+  { path: "/", name: "HomePage", Component: Redirect },
+  { path: "/HomePage", name: "HomePage", Component: HomePage },
   { path: "/Friend", name: "Friend", Component: Friend },
   { path: "/ResourcePage", name: "ResourcePage", Component: ResourcePage },
 ];
@@ -27,7 +25,7 @@ function App() {
               unmountOnExit
             >
               <div className="page">
-                <Component />
+                <Component to="/HomePage" />
               </div>
             </CSSTransition>
           )}
