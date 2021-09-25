@@ -1,0 +1,21 @@
+{
+  "name": "prizeserver",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Xianxin Zeng",
+  "license": "MIT",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12"
+  },
+
+  "scripts": {
+    "start": "nodemon --exec babel-node -- ./index.js",
+    "build": "babel ./index.js --out-file server-compiled.js",
+    "serve": "node server-compiled.js"
+  }
+  
+}
