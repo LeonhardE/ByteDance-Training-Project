@@ -17,7 +17,7 @@ export default function HomePage() {
       </div>
       <div className="flexContainer">
         <div className="leftButton">
-          <Link to="/nav" className="butt"></Link>
+          <Link to="/ResourcePage" className="butt"></Link>
         </div>
 
         <iframe
