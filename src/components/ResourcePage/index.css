@@ -1,0 +1,55 @@
+#left * {
+  box-sizing: border-box;
+  text-align: center;
+  white-space: nowrap;
+  color: aliceblue;
+}
+
+#left {
+  height: 90vh;
+  padding: 5vh 0;
+  background-color: #131313;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+#left .colBox {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#left .cardBox {
+  padding: 1vh;
+  width: 25vw;
+  border: 3px solid aliceblue;
+  border-radius: 2vh;
+  overflow: hidden;
+  margin: 1vh;
+  transition: all ease 1s;
+}
+
+#left .bookmarkBox,
+#left .colBox:nth-child(1) .cardBox:nth-child(1),
+#left .colBox:nth-child(2) .cardBox:nth-child(1) {
+  flex: 1;
+}
+
+#left .cardBox button {
+  margin: 0;
+  padding: 1vh;
+  width: 100%;
+  border: 0;
+  border-radius: 1vh;
+  background-color: aliceblue;
+  color: #131313;
+  font-size: 3vh;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  outline: none;
+}
+#left .bookmarkBox button {
+  cursor: unset;
+}
