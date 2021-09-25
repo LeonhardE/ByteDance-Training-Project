@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { Down, Left, Right, Up } from "./demo";
 import {
   BrowserRouter as Router,
@@ -8,7 +7,8 @@ import {
 } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
 import "./App.css";
-import useSlide from "./demo/useDrag";
+import useChangeRouterByDraging from "./demo/useChangeRouterByDraging";
+import useChangeRouterByKeyboard from "./demo/useChangeRouterByKeyboard";
 const routes = [
   { path: "/", name: "Right", Component: Right },
   { path: "/up", name: "Up", Component: Up },
@@ -34,7 +34,8 @@ const config = [
   },
 ];
 function App() {
-  useSlide(config);
+  useChangeRouterByDraging(config);
+  useChangeRouterByKeyboard()
   return (
     <>
       <div bg="light">
