@@ -1,16 +1,13 @@
 import React from 'react';
-import 'antd/dist/antd.css'
+
 import './style/css/homepage.css';
-import {
-    Link
-} from "react-router-dom";
+import {Link} from "react-router-dom";
 export default function HomePage() {
 
     const editorStyle = {
-        width: "100%",
-        minHeight: "825px",
+        width: "100vw",
+        height: "100vh",
         border: '0',
-        borderRadius: "4px",
         overflow: "hidden"
     }
 
@@ -24,7 +21,8 @@ export default function HomePage() {
                     <Link to='/nav' className='butt'></Link>
                 </div>
 
-               <iframe
+
+                <iframe
                     id='editor'
                     src="https://codesandbox.io/embed/pedantic-microservice-z5vxg?fontsize=14&hidenavigation=1&theme=dark&view=editor"
                     style={editorStyle}
