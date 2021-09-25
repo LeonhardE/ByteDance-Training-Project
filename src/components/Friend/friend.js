@@ -67,19 +67,22 @@ class Friend extends React.Component {
 
     handleUpdate = () => {
         // 点击提交按钮更新推荐人信息
-        var formData = new FormData();
-        formData.set('gender', this.state.gender);
-        formData.append('age', this.state.age);
         console.log(this.state.gender)
         console.log(this.state.age)
-        console.log(formData)
+        var data = {
+          'gender': this.state.gender,
+          'age': this.state.age
+        }
+        let that = this
         // 这里是空的
         fetch("http://localhost:5000/setproperty", {
             method: "POST",
-            headers: {},
-            contentType: false,
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            //contentType: false,
             processData: false,
-            body: formData,
+            body: JSON.stringify(data),
         })
         .then(res => res.text())
         .catch(error => console.error('Error: ', error))
