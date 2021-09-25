@@ -1,4 +1,4 @@
-export const documents = [
+export const knowledge = [
   {
     title: 'website1',
     addr: 'https://www.baidu.com'
