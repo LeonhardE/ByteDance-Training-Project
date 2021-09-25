@@ -3,6 +3,10 @@ const app = express()
 const port = 5000
 const multiparty = require('multiparty')
 
+let allCandidateNames = ['a', 'b']
+let allCandidatePhotos = ['c', 'd']
+let allCandidateInfo = ['e', 'f']
+
 let candidateNames = ['a']
 let candidatePhotos = ['b']
 let candidateInfo = ['c']
@@ -26,7 +30,7 @@ app.get('/', (req, res) => {
   res.send('UPC后台系统')
 })
 
-app.get('/defaultinfo', function(req, res){
+app.get('/defaultinfo', function(req, res) {
   // 获取默认推荐人信息
   var data = {
     code: 200,
@@ -38,6 +42,14 @@ app.get('/defaultinfo', function(req, res){
     }
   }
   res.json(data)
+})
+
+app.post('/setproperty', (req, res) => {
+  // 根据选择的性别和年龄更新推荐信息
+  console.log("req", req.body)
+  let form = new multiparty.Form()
+  candidateNames = ['a','b']
+  res.send('数据已接收')
 })
 
 app.listen(port, () => {
