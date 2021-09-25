@@ -1,0 +1,26 @@
+.header { grid-area: header;}
+.comment { grid-area: comment;}
+.showBox { grid-area: showBox;}
+.sideContent { grid-area: sideContent;}
+
+.container {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'sideContent showBox showBox showBox showBox showBox '
+      'sideContent comment comment comment comment comment ';
+    grid-gap: 5px;
+    background-color: #323233;  
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 59px 400px 150px;
+}
+
+.container > div {
+    background-color: rgba(19, 18, 18, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    color: #8e8e8e;
+}
+
+
