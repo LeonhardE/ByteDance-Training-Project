@@ -11,7 +11,7 @@ class Friend extends React.Component {
         this.state = {
             // 性别：0代表未选择，1代表男，2代表女
             gender: "0",
-            // 年龄：0代表未选择，1代表20-25，2代表25-30，3代表30-35，4代表35-40
+            // 年龄：0代表未选择，1代表20-25，2代表25-30，3代表30-40，4代表40-50
             age: "0",
             // 推荐人名
             candidateNames: [],
@@ -148,8 +148,8 @@ class Friend extends React.Component {
                       >
                         <Option value="1">20-25岁</Option>
                         <Option value="2">25-30岁</Option>
-                        <Option value="3">30-35岁</Option>
-                        <Option value="4">35-40岁</Option>
+                        <Option value="3">30-40岁</Option>
+                        <Option value="4">40-50岁</Option>
                       </Select>
                     </Form.Item>
                   </Col>
@@ -158,9 +158,7 @@ class Friend extends React.Component {
                     <Button onClick={this.handleUpdate} type="primary">
                         Submit
                     </Button>
-                    <div>{this.state.candidateNames}</div>
-                    <div>{this.state.candidatePhotos}</div>
-                    <div>{this.state.candidateInfo}</div>
+                    <img alt="candidate" src={this.state.candidatePhotos[0]} />
                 </Row>
               </Form>
             </Drawer>
