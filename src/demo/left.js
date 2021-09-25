@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Contact() {
+function Left() {
   return (
     <>
-      <h1>Contact</h1>
+      <h1>Left</h1>
       <p>
         Aliquam iaculis a nisi sed ornare. Sed venenatis tellus vel consequat
         congue. In bibendum vestibulum orci et feugiat.
@@ -12,4 +12,4 @@ function Contact() {
   )
 }
 
-export default Contact
+export default Left

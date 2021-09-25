@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
-function Home() {
+function Up() {
   return (
     <>
-      <h1>Home</h1>
+      <h1>Up</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet,
         purus vitae eleifend tristique, lorem magna volutpat orci, et vehicula
@@ -11,7 +11,7 @@ function Home() {
         porta turpis, ut iaculis justo.
       </p>
     </>
-  )
+  );
 }
 
-export default Home
+export default Up;

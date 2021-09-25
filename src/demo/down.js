@@ -1,9 +1,9 @@
 import React from 'react'
 
-function About() {
+function Down() {
   return (
     <>
-      <h1>About</h1>
+      <h1>Down</h1>
       <p>
         Donec sit amet augue at enim sollicitudin porta. Praesent finibus ex
         velit, quis faucibus libero congue et. Quisque convallis eu nisl et
@@ -15,4 +15,4 @@ function About() {
   )
 }
 
-export default About
+export default Down

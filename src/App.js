@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Home, About, Contact } from "./demo";
+import { Down, Left, Right, Up } from "./demo";
 import {
   BrowserRouter as Router,
   Route,
@@ -8,15 +8,33 @@ import {
 } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
 import "./App.css";
-import useSlide from "./demo/useSlide";
+import useSlide from "./demo/useDrag";
 const routes = [
-  { path: "/", name: "Home", Component: Home },
-  { path: "/about", name: "About", Component: About },
-  { path: "/contact", name: "Contact", Component: Contact },
+  { path: "/", name: "Right", Component: Right },
+  { path: "/up", name: "Up", Component: Up },
+  { path: "/down", name: "Down", Component: Down },
+  { path: "/left", name: "Left", Component: Left },
 ];
-
+const config = [
+  {
+    type: "right",
+    path: "/",
+  },
+  {
+    type: "left",
+    path: "/left",
+  },
+  {
+    type: "up",
+    path: "/up",
+  },
+  {
+    type: "down",
+    path: "/down",
+  },
+];
 function App() {
-  useSlide()
+  useSlide(config);
   return (
     <>
       <div bg="light">

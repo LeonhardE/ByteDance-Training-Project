@@ -1,8 +1,7 @@
 import { useEffect } from "react";
-
 import { useHistory } from "react-router-dom";
 
-export default function useSlide() {
+export default function useSlide(config) {
   const history = useHistory();
   useEffect(() => {
     let isDraging = false;
@@ -14,9 +13,13 @@ export default function useSlide() {
       document.removeEventListener("mousemove", move);
       document.removeEventListener("mouseup", up);
       if (isDraging === true) {
+        const currentPath = history.location.pathname;
+        console.log(direction);
+        const path =
+          config.find((item) => item.type === direction)?.path || currentPath;
         const distance = mouseMoveDistitens(x, y, e.clientX, e.clientY);
-        if (distance > 50) {
-          history.push("/contact");
+        if (distance > 20) {
+          history.push(path);
         }
       }
       direction = "none";
@@ -31,9 +34,9 @@ export default function useSlide() {
     let move = (e) => {
       [dx, dy] = [e.clientX - x, e.clientY - y];
       if (direction === "none") {
-        direction = moveDirection(dx, dy);
+        direction = dragDirection(dx, dy);
       } else {
-        if (!isValidSlide(direction, dx, dy)) {
+        if (!isValidDrag(direction, dx, dy)) {
           isDraging = false;
         }
       }
@@ -51,7 +54,7 @@ function mouseMoveDistitens(startX, startY, endX, endY) {
   );
 }
 
-function moveDirection(dx, dy) {
+function dragDirection(dx, dy) {
   const { abs } = Math;
   let direction = "none";
   if (abs(dx) > abs(dy)) {
@@ -66,15 +69,19 @@ function moveDirection(dx, dy) {
     } else {
       direction = "up";
     }
-    return direction;
   }
+  return direction;
 }
 
-function isValidSlide(direction, dx, dy) {
-  const currentDirection = moveDirection(dx, dy);
-  if (direction === currentDirection) {
-    return true;
-  } else {
+function isValidDrag(direction, dx, dy) {
+  const currentDirection = dragDirection(dx, dy);
+  if (
+    (direction === "top" && currentDirection === "down") ||
+    (direction === "down" && currentDirection === "top") ||
+    (direction === "left" && currentDirection === "right") ||
+    (direction === "right" && currentDirection === "left")
+  ) {
     return false;
   }
+  return true;
 }
