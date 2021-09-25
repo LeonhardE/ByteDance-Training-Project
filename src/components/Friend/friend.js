@@ -1,6 +1,6 @@
 import 'antd/dist/antd.css'
 import React from "react"
-import { Drawer, Form, Button, Col, Row, Input, Select, DatePicker, Space } from 'antd'
+import { Drawer, Form, Button, Col, Row, Select, Space } from 'antd'
 import { PlusOutlined } from '@ant-design/icons'
 
 const { Option } = Select
@@ -27,13 +27,13 @@ class Friend extends React.Component {
     componentDidMount() {
         // 从后端获取默认推荐人信息
         // 后端接口Todo
-        fetch('http://localhost:5000/defaultinfo')
+        fetch('http://localhost:5000/retriveInfo')
         .then(res => res.json())
         .then((data) => {
             this.setState({
-                candidateNames: data.data.default_names,
-                candidatePhotos: data.data.default_photos,
-                candidateInfo: data.data.default_info
+                candidateNames: data.data.retrived_names,
+                candidatePhotos: data.data.retrived_photos,
+                candidateInfo: data.data.retrived_info
             })
             console.log(this.state)
         })
@@ -73,7 +73,6 @@ class Friend extends React.Component {
           'gender': this.state.gender,
           'age': this.state.age
         }
-        let that = this
         // 这里是空的
         fetch("http://localhost:5000/setproperty", {
             method: "POST",
@@ -88,13 +87,13 @@ class Friend extends React.Component {
         .catch(error => console.error('Error: ', error))
         .then(response => {
             console.log('Success: ', response)
-            fetch('http://localhost:5000/defaultinfo')
+            fetch('http://localhost:5000/retriveInfo')
             .then(res => res.json())
             .then((data) => {
                 this.setState({
-                    candidateNames: data.data.default_names,
-                    candidatePhotos: data.data.default_photos,
-                    candidateInfo: data.data.default_info
+                    candidateNames: data.data.retrived_names,
+                    candidatePhotos: data.data.retrived_photos,
+                    candidateInfo: data.data.retrived_info
                 })
                 console.log(this.state)
             })
@@ -106,10 +105,10 @@ class Friend extends React.Component {
         return (
           <>
             <Button type="primary" onClick={this.showDrawer} icon={<PlusOutlined />}>
-              New account
+              缘来如此
             </Button>
             <Drawer
-              title="Create a new account"
+              title="单身程序员自救平台"
               width={720}
               onClose={this.onClose}
               visible={this.state.visible}
@@ -125,14 +124,13 @@ class Friend extends React.Component {
                   <Col span={12}>
                     <Form.Item
                       name="性别"
-                      label="Gender"
+                      label="性别"
                       rules={[{ required: true, message: '请选择您的性别' }]}
                     >
                       <Select 
                         placeholder="请选择您的性别"
                         onChange={this.onGenderChange}
                       >
-                        <Option value="0">未选择</Option>
                         <Option value="1">男性</Option>
                         <Option value="2">女性</Option>
                       </Select>
@@ -141,14 +139,13 @@ class Friend extends React.Component {
                   <Col span={12}>
                     <Form.Item
                       name="年龄"
-                      label="Age"
+                      label="年龄"
                       rules={[{ required: true, message: '请选择您的年龄段' }]}
                     >
                       <Select 
                         placeholder="请选择您的年龄段"
                         onChange={this.onAgeChange}
                       >
-                        <Option value="0">未选择</Option>
                         <Option value="1">20-25岁</Option>
                         <Option value="2">25-30岁</Option>
                         <Option value="3">30-35岁</Option>

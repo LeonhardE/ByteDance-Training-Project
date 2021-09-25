@@ -1,11 +1,12 @@
 const express = require('express')
 const app = express()
 const port = 5000
-const multiparty = require('multiparty')
 
-let allCandidateNames = ['a', 'b']
-let allCandidatePhotos = ['c', 'd']
-let allCandidateInfo = ['e', 'f']
+let allCandidateNames = ['a', 'b', '小明', 'Lucy', 'John', '翠花']
+let allCandidateGender = ['2', '1', '1', '2', '1', '2']
+let allCandidateAge = ['1', '2', '3', '4', '2', '1']
+let allCandidatePhotos = ['c', 'd', 'e', 'f', 'g', 'h']
+let allCandidateInfo = ['e', 'f', 'g', 'h', 'i', 'j']
 
 let candidateNames = ['a']
 let candidatePhotos = ['b']
@@ -30,15 +31,15 @@ app.get('/', (req, res) => {
   res.send('UPC后台系统')
 })
 
-app.get('/defaultinfo', function(req, res) {
+app.get('/retriveInfo', function(req, res) {
   // 获取默认推荐人信息
   var data = {
     code: 200,
     msg: 'OK',
     data: {
-      default_names: candidateNames,
-      default_photos: candidatePhotos,
-      default_info: candidateInfo
+      retrived_names: candidateNames,
+      retrived_photos: candidatePhotos,
+      retrived_info: candidateInfo
     }
   }
   res.json(data)
@@ -46,10 +47,22 @@ app.get('/defaultinfo', function(req, res) {
 
 app.post('/setproperty', (req, res) => {
   // 根据选择的性别和年龄更新推荐信息
-  console.log("req-", req)
   console.log("req", req.body)
-  let form = new multiparty.Form()
-  candidateNames = ['a','b']
+  // console.log(req.body.gender)
+  // console.log(req.body.age)
+  if (req.body.gender !== '0' && req.body.age !== '0') {
+    candidateNames = []
+    candidatePhotos = []
+    candidateInfo = []
+    let targetgender = req.body.gender === '1' ? '2' : '1'
+    for (let i = 0; i < allCandidateNames.length; i++) {
+      if (allCandidateGender[i] === targetgender && allCandidateAge[i] === req.body.age) {
+        candidateNames.push(allCandidateNames[i])
+        candidatePhotos.push(allCandidatePhotos[i])
+        candidateInfo.push(allCandidateInfo[i])
+      }
+    }
+  }
   res.send('数据已接收')
 })
 
