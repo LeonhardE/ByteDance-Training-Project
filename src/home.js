@@ -33,6 +33,7 @@ export default function HomePage() {
             </div>
             <div className="navBottom">
                 <div className="butt"></div>
+                <div  className="bottomRoute"><Link to="/MessagePage">{loveIcon}</Link></div>
             </div>
         </div>
     );

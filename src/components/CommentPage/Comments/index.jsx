@@ -25,7 +25,7 @@ export default class Comments extends Component {
         return (
             <div>
                 <div>
-                    <TextArea ref = {c => this.comment = c} type="text"  showCount maxLength={100} onChange={onChange} />
+                    <TextArea ref = {c => this.comment = c} type="text"  showCount maxLength={100}  />
                     {/* <input ref = {c => this.comment = c}type="text" /> */}
                     <button onClick = {this.addComments}>send</button>
                 </div>
