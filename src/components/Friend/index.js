@@ -107,6 +107,7 @@ class Friend extends React.Component {
     }
 
     render() {
+        const { candidateNames, candidatePhotos, candidateInfo } = this.state
         return (
           <>
             <div onClick={this.showDrawer}>
@@ -173,31 +174,31 @@ class Friend extends React.Component {
                 </div>
                 <div class="mp">
                     <div class="rwbg">
-                    <img src="../photos/liuhaoran.jpg"></img>
+                    <img alt="photo1" src={candidatePhotos[0]}></img>
                     </div>
-                    <p class="mz">姓名:刘昊然</p>
-                    <div class="nl">介绍:本名刘源，1997年10月10日生于河南省平顶山，中国内地男演员。</div>
+                    <p class="mz">姓名:{candidateNames[0]}</p>
+                    <div class="nl">介绍:{candidateInfo[0]}</div>
                 </div>
                 <div class="mp r">
                     <div class="rwbg">
-                    <img src="../photos/wulei.jpg"></img>
+                    <img alt="photo2" src={candidatePhotos[1]}></img>
                     </div>
-                    <p class="mz">姓名:吴磊</p>
-                    <div class="nl">介绍:1999年12月26日出生于上海，祖籍四川广安，中国内地影视男演员，就读于北京电影学院。</div>
+                    <p class="mz">姓名:{candidateNames[1]}</p>
+                    <div class="nl">介绍:{candidateInfo[1]}</div>
                 </div>
                 <div class="mp">
                     <div class="rwbg">
-                    <img src="../photos/lifeifei.jpg"></img>
+                    <img alt="photo3" src={candidatePhotos[2]}></img>
                     </div>
-                    <p class="mz">姓名:李飞飞</p>
-                    <div class="nl">女，1976年出生于中国北京，美国国家工程院院士、美国国家医学院院士、美国艺术与科学院院士，美国斯坦福大学首位红杉讲席教授，以人为本人工智能研究院（HAI）院长，AI4ALL联合创始人及主席，Twitter公司董事会独立董事 。</div>
+                    <p class="mz">姓名:{candidateNames[2]}</p>
+                    <div class="nl">介绍:{candidateInfo[2]}</div>
                 </div>
                 <div class="mp r">
                     <div class="rwbg">
-                    <img src="../photos/dilireba.jpg"></img>
+                    <img alt="photo4" src={candidatePhotos[3]}></img>
                     </div>
-                    <p class="mz">姓名:迪丽热巴</p>
-                    <div class="nl">介绍:1992年6月3日出生于新疆乌鲁木齐市，中国内地影视女演员、歌手，毕业于上海戏剧学院。</div>
+                    <p class="mz">姓名:{candidateNames[3]}</p>
+                    <div class="nl">介绍:{candidateInfo[3]}</div>
                 </div>
                 <div class="clear"></div>
             </form>

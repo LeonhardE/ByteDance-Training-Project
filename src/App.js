@@ -3,10 +3,10 @@ import HomePage from "./home";
 import Friend from "./components/Friend";
 import {
   Route,
-  useHistory,
+  // useHistory,
 } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 
 const routes = [
   { path: "/", name: "HomePage", Component: HomePage },
