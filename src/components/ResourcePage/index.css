@@ -72,8 +72,12 @@
   cursor: unset;
 }
 
+#left .ant-tabs ul {
+  margin-top: 10px;
+}
+
 #left .cardBox li {
-  margin: 0;
+  margin: 0 10px 0 0;
   padding: 3px;
   font-size: 16px;
   border-bottom: 1px solid #333;
@@ -85,21 +89,24 @@
 }
 
 #left .ant-tabs-nav {
-  margin: 0 8px 8px 0vh;
+  margin: 0 10px;
 }
 
 #left .ant-tabs-tab {
-  margin: 0 8px;
+  margin: 0 16px 0 0;
   padding: 8px 0;
 }
 
 #left .ant-tabs-nav::before {
-  border: 1px solid #444;
-  left: 8px;
+  border-color: #444;
 }
 
 #left .ant-tabs-tab-btn {
   color: aliceblue;
+}
+
+#left .ant-tabs-nav-operations {
+  display: none;
 }
 
 #left .ant-tabs-tab-btn:hover,
@@ -107,15 +114,7 @@
   color: #1890ff;
 }
 
-#left .ant-tabs-nav {
-  margin-bottom: 0;
-}
-
-#left .ant-tabs ul {
-  margin-top: 10px;
-}
-
 #left .activeLink {
-  background-color: #2a2a2a;
   transition: all ease .3s;
+  border-bottom: 1px solid #ddd !important;
 }

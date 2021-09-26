@@ -8,7 +8,7 @@
 }
 
 #left .github {
-  /* flex: 1; */
+  flex: 1;
   margin-top: 8px;
   border-radius: 8px;
   display: flex;
@@ -53,7 +53,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  white-space: nowrap;
 }
 
 #left .github .infoBox div div:nth-child(1) {

@@ -42,7 +42,7 @@ export default function ResourcePage() {
 
   if (!activeCards.length) {
     setTimeout(() => {
-      setActiveCards(["card2", "card4", "card5"]);
+      setActiveCards(["card1", "card3", "card5"]);
     }, 500)
   }
 
@@ -115,10 +115,10 @@ export default function ResourcePage() {
     <div id="left">
       <div className="colBox">
         <GithubCard handleClick={handleClick} isActive={activeCards.indexOf("card1") !== -1} />
-        {renderCard("👑 官方文档库", "card2", documents)}
+        {renderCard("📚 知识库", "card2", knowledge)}
       </div>
       <div className="colBox">
-        {renderCard("📚 知识库", "card3", knowledge)}
+        {renderCard("👑 官方文档库", "card3", documents)}
         {renderCard("🏳️‍🌈 好用的网站", "card4", websites)}
       </div>
       <div className="colBox">
