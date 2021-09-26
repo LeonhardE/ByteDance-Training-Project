@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
+#left ::-webkit-scrollbar {
   display: none;
 }
 
