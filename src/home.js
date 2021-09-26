@@ -36,9 +36,8 @@ export default function HomePage() {
                 ></iframe>
             </div>
             <div className="navBottom">
-                <div className="bottomRoute">
-                    <Link to="/MessagePage" className="butt"> {loveIcon}</Link>
-                </div>
+                <div className="butt"></div>
+                <div  className="bottomRoute"><Link to="/MessagePage">{loveIcon}</Link></div>
             </div>
         </div>
     );

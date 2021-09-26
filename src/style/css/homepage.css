@@ -41,6 +41,22 @@
   color: #d6d4d4;
 }
 
+
+
+.navBottom .bottomRoute {
+  color: #d6d4d4;
+  display: none;
+  position: absolute;
+  left: 96vw;
+  top: 5px;
+}
+
+.navBottom:hover .bottomRoute {
+  display: block;
+}
+
+
+
 .navBottom {
   height: 20px;
   width: 100%;
@@ -55,21 +71,30 @@
   -ms-flex-pack: center;
   justify-content: center;
   cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 
-.navBottom .bottomRoute {
+.navBottom .butt {
   width: 50px;
   height: 5px;
   border-radius: 10px;
   background-color: #d6d4d4;
-  transition: 0.3s all;
+  transition: 0.5s all;
 }
+
+.navBottom:hover {
+  height: 40px;
+  position: relative;
+}
+
 
 .bottomRoute:hover {
   width: 75px;
   height: 7px;
 }
+
 
 .flexContainer {
   display: -webkit-box;
