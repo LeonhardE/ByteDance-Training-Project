@@ -13,6 +13,13 @@
         .rightRoute {
             display: block;
         }
+
+        .butt {
+            width: 100px;
+            height: 6px;
+
+        }
+
     }
 
     .rightRoute {
@@ -27,6 +34,7 @@
         border-radius: 10px;
         background-color: rgb(214, 212, 212);
         cursor: pointer;
+        transition: .3s;
     }
 
     .rightRoute {
@@ -36,20 +44,30 @@
 }
 
 .navBottom {
-    height: 20px;
+    height: 30px;
     width: 100%;
     background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+
+        .butt {
+            width: 100px;
+            height: 7px;
+        }
+
+    }
 
     .butt {
         width: 50px;
         height: 5px;
         border-radius: 10px;
         background-color: rgb(214, 212, 212);
-        ;
+        cursor: pointer;
+        transition: .3s;
     }
 }
 
@@ -57,27 +75,35 @@
     display: flex;
 
     .leftButton {
-        width: 15px;
+        width: 30px;
         display: flex;
         background-color: black;
         justify-content: center;
         align-items: center;
+        transition: .3s;
 
         .butt {
             position: relative;
             bottom: 5px;
-            height: 40px;
-            width: 4px;
+            height: 60px;
+            width: 6px;
             background-color: rgb(214, 212, 212);
             border-radius: 4px;
             cursor: pointer;
+            transition: .3s;
+        }
+
+        &:hover {
+            width: 35px;
+
+            .butt {
+                height: 120px;
+                width: 8px;
+
+            }
         }
     }
 
-    .leftList {
-        width: 100px;
-        height: 800px;
-    }
 }
 
 .ant-drawer-body {
