@@ -14,6 +14,22 @@ export const knowledge = [
         title: "掘金",
         addr: "https://juejin.cn/",
       },
+      {
+        title: "CSDN",
+        addr: "https://www.csdn.net/",
+      },
+      {
+        title: "博客园",
+        addr: "https://www.cnblogs.com/",
+      },
+      {
+        title: "InfoQ",
+        addr: "https://xie.infoq.cn/",
+      },
+      {
+        title: "StackOverflow",
+        addr: "https://stackoverflow.com/",
+      },
     ],
   },
   {
@@ -31,7 +47,14 @@ export const knowledge = [
         title: "36氪",
         addr: "https://36kr.com/",
       },
-      
+      {
+        title: "数字尾巴",
+        addr: "https://www.dgtle.com/",
+      },
+      {
+        title: "ZEALER",
+        addr: "https://www.zealer.com/",
+      },
     ],
   },
 ];
