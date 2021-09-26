@@ -1,10 +1,10 @@
 export const bookmarks = [
   {
-    title: 'website1',
+    title: 'baidu',
     addr: 'https://www.baidu.com'
   },
   {
-    title: 'website2',
+    title: 'baidu',
     addr: 'https://www.baidu.com'
   },
   {

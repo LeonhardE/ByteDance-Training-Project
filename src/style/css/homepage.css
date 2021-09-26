@@ -1,0 +1,147 @@
+.navTop {
+  height: 20px;
+  width: 100%;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.navTop:hover {
+  height: 40px;
+}
+
+.navTop:hover .rightRoute {
+  display: block;
+}
+
+.navTop .rightRoute {
+  display: none;
+  position: absolute;
+  left: 96vw;
+}
+
+.navTop .butt {
+  width: 50px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #d6d4d4;
+  cursor: pointer;
+}
+
+.navTop .rightRoute {
+  color: #d6d4d4;
+}
+
+.navBottom {
+  height: 20px;
+  width: 100%;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.navBottom .butt {
+  width: 50px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #d6d4d4;
+}
+
+.flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flexContainer .leftButton {
+  width: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flexContainer .leftButton .butt {
+  position: relative;
+  bottom: 5px;
+  height: 40px;
+  width: 4px;
+  background-color: #d6d4d4;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.flexContainer .leftList {
+  width: 100px;
+  height: 800px;
+}
+
+.ant-drawer-body {
+  padding: 0;
+}
+
+.drawerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow: hidden;
+}
+
+.drawerContainer .navContainer {
+  width: 65px;
+  height: 100%;
+}
+
+.drawerContainer .closeButton {
+  float: right;
+  width: 15px;
+  height: 820px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.drawerContainer .closeButton .butt {
+  position: relative;
+  bottom: 5px;
+  height: 40px;
+  width: 4px;
+  background-color: #d6d4d4;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=homepage.css.map */
