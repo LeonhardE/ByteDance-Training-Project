@@ -116,9 +116,11 @@ class Friend extends React.Component {
             <Drawer
               title="单身程序员自救平台"
               width={720}
+              
               onClose={this.onClose}
               visible={this.state.visible}
-              bodyStyle={{ paddingBottom: 80 }}
+              bodyStyle={{ paddingBottom: 80, backgroundColor:"rgb(59, 56, 56)"}}
+              
               extra={
                 <Space>
                   <Button onClick={this.onClose}>Cancel</Button>
@@ -127,7 +129,7 @@ class Friend extends React.Component {
             >
               <Form layout="vertical" hideRequiredMark>
                 <Row gutter={16}>
-                  <Col span={12}>
+                  <Col span={12} className="padded-mini">
                     <Form.Item
                       name="性别"
                       label="性别"
@@ -142,7 +144,7 @@ class Friend extends React.Component {
                       </Select>
                     </Form.Item>
                   </Col>
-                  <Col span={12}>
+                  <Col span={12} className="padded-mini">
                     <Form.Item
                       name="年龄"
                       label="年龄"
@@ -160,7 +162,7 @@ class Friend extends React.Component {
                     </Form.Item>
                   </Col>
                 </Row>
-                <Row gutter={16}>
+                <Row gutter={16} className="right-btn">
                     <Button onClick={this.handleUpdate} type="primary">
                         Submit
                     </Button>
