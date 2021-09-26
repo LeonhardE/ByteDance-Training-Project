@@ -1,107 +1,272 @@
 export const documents = [
   {
-    folder: '前端',
-    title: 'MDN Web文档',
-    addr: 'https://developer.mozilla.org/zh-CN'
+    folder: "前端",
+    childFolder: [
+      {
+        folder: "常用文档",
+        children: [
+          {
+            title: "MDN Web文档",
+            addr: "https://developer.mozilla.org/zh-CN",
+          },
+          {
+            title: "ES6入门教程",
+            addr: "https://es6.ruanyifeng.com/",
+          },
+        ],
+      },
+      {
+        folder: "开发框架",
+        children: [
+          {
+            title: "Vue.js",
+            addr: "https://cn.vuejs.org/",
+          },
+          {
+            title: "React.js",
+            addr: "https://react.docschina.org/",
+          },
+          {
+            title: "Angular.js",
+            addr: "https://angular.cn/",
+          },
+        ],
+      },
+      {
+        folder: "常用库",
+        children: [
+          {
+            title: "JQuery",
+            addr: "https://www.jquery123.com/",
+          },
+          {
+            title: "Lodash.js",
+            addr: "https://www.lodashjs.com/",
+          },
+          {
+            title: "Moment.js",
+            addr: "http://momentjs.cn/",
+          },
+        ],
+      },
+      {
+        folder: "CSS",
+        children: [
+          {
+            title: "BootStrap",
+            addr: "https://www.bootcss.com/",
+          },
+          {
+            title: "Tailwind",
+            addr: "https://www.tailwindcss.cn/",
+          },
+          {
+            title: "Layui",
+            addr: "https://www.layui.com/",
+          },
+        ],
+      },
+
+      {
+        folder: "静态站点生成",
+        children: [
+          {
+            title: "VuePress",
+            addr: "https://www.vuepress.cn/",
+          },
+          {
+            title: "Jekyll",
+            addr: "https://www.jekyll.com.cn/",
+          },
+          {
+            title: "Docusaurus",
+            addr: "https://www.docusaurus.cn/",
+          },
+        ],
+      },
+      {
+        folder: "打包工具",
+        children: [
+          {
+            title: "Webpack",
+            addr: "https://www.webpackjs.com/",
+          },
+          {
+            title: "Grunt",
+            addr: "https://www.gruntjs.net/",
+          },
+          {
+            title: "Gulp.js",
+            addr: "https://www.gulpjs.com.cn/",
+          },
+        ],
+      },
+      {
+        folder: "测试框架",
+        children: [
+          {
+            title: "Jest.js",
+            addr: "https://jestjs.io/zh-Hans/",
+          },
+          {
+            title: "Mocha.js",
+            addr: "https://mochajs.cn/",
+          },
+          {
+            title: "Browsersync.js",
+            addr: "http://www.browsersync.cn/",
+          },
+        ],
+      },
+    ],
   },
+
   {
-    folder: '前端',
-    title: 'ES6入门教程',
-    addr: 'https://es6.ruanyifeng.com/'
+    folder: "Node.js",
+    childFolder: [
+      {
+        folder: "常用文档",
+        children: [
+          {
+            title: "Node.js",
+            addr: "https://nodejs.org/zh-cn/",
+          },
+          {
+            title: "NVM",
+            addr: "https://github.com/nvm-sh/nvm",
+          },
+        ],
+      },
+      {
+        folder: "开发框架",
+        children: [
+          {
+            title: "Express",
+            addr: "https://www.expressjs.com.cn/",
+          },
+          {
+            title: "Koa",
+            addr: "https://www.koajs.com.cn/",
+          },
+        ],
+      },
+
+      {
+        folder: "数据库相关",
+        children: [
+          {
+            title: "Sequelize",
+            addr: "https://demopark.github.io/sequelize-docs-Zh-CN/",
+          },
+          {
+            title: "Typeorm",
+            addr: "https://typeorm.io/#/",
+          },
+        ],
+      },
+
+      {
+        folder: "渲染模版",
+        children: [
+          {
+            title: "Nunjucks",
+            addr: "https://mozilla.github.io/nunjucks/",
+          },
+          {
+            title: "EJS",
+            addr: "https://ejs.co/",
+          },
+        ],
+      },
+
+      {
+        folder: "HTTP",
+        children: [
+          {
+            title: "axios",
+            addr: "https://github.com/axios/axios",
+          },
+          {
+            title: "wreck",
+            addr: "https://github.com/hapijs/wreck",
+          },
+        ],
+      },
+
+      {
+        folder: "图片相关",
+        children: [
+          {
+            title: "sharp",
+            addr: "https://sharp.pixelplumbing.com/",
+          },
+          {
+            title: "gm",
+            addr: "http://aheckmann.github.io/gm/",
+          },
+        ],
+      },
+    ],
   },
+
   {
-    folder: '前端',
-    title: 'Vue.js',
-    addr: 'https://cn.vuejs.org/'
-  },
-  {
-    folder: '前端',
-    title: 'React.js',
-    addr: 'https://react.docschina.org/'
-  },
-  {
-    folder: '前端',
-    title: 'Angular.js',
-    addr: 'https://angular.cn/'
-  },
-  {
-    folder: '前端',
-    title: 'Preact.js',
-    addr: 'https://www.preactjs.com.cn/'
-  },
-  {
-    folder: '前端',
-    title: 'Ember.js',
-    addr: 'https://emberjs.com/'
-  },
-  {
-    folder: '前端',
-    title: 'React-Native',
-    addr: 'https://reactnative.cn/'
-  },
-  {
-    folder: '前端',
-    title: 'Weex',
-    addr: 'https://weex.apache.org/zh/guide/introduction.html'
-  },
-  {
-    folder: '前端',
-    title: 'Uni-app',
-    addr: 'https://uniapp.dcloud.io/'
-  },
-  {
-    folder: '前端',
-    title: 'Ionic',
-    addr: 'https://ionicframework.com/'
-  },
-  {
-    folder: '前端',
-    title: 'Alita.js',
-    addr: 'https://alitajs.com/'
-  },
-  {
-    folder: '前端',
-    title: 'Nuxt.js',
-    addr: 'https://www.nuxtjs.cn/'
-  },
-  {
-    folder: '前端',
-    title: 'Next.js',
-    addr: 'https://www.nextjs.cn/'
-  },
-  {
-    folder: '前端',
-    title: 'Polymer.js',
-    addr: 'https://www.polymer-project.org/'
-  },
-  {
-    folder: '前端',
-    title: 'Backbone.js',
-    addr: 'https://www.backbonejs.com.cn/'
-  },
-  {
-    folder: '前端',
-    title: 'Knockout.js',
-    addr: 'https://knockoutjs.com/'
-  },
-  {
-    folder: '前端',
-    title: 'Meteor',
-    addr: 'https://www.meteor.com/'
-  },
-  {
-    folder: '前端',
-    title: 'Vuex',
-    addr: 'https://vuex.vuejs.org/zh/'
-  },
-  {
-    folder: '前端',
-    title: 'Redux',
-    addr: 'https://www.reduxjs.cn/'
-  },
-  {
-    folder: '前端',
-    title: 'Recoil.js',
-    addr: 'https://recoil.js.cn/'
-  }
-]
+    folder: "后端",
+
+    childFolder: [
+      {
+        folder: "云服务器",
+        children: [
+          {
+            title: "阿里云",
+            addr: "https://www.aliyun.com/",
+          },
+          {
+            title: "腾讯云",
+            addr: "https://cloud.tencent.com/",
+          },
+        ],
+      },
+      {
+        folder: "数据库",
+        children: [
+          {
+            title: "MySQL",
+            addr: "https://www.mysql.com/",
+          },
+          {
+            title: "MongoDB",
+            addr: "https://www.mongodb.com/",
+          },
+        ],
+      },
+      {
+        folder: "文档手册",
+        children: [
+          {
+            title: "Mysql中文手册",
+            addr: "http://www.deituicms.com/mysql8cn/cn/web.html",
+          },
+          {
+            title: "Mongodb 文档",
+            addr: "https://mongoing.com/docs/",
+          },
+        ],
+      },
+      {
+        folder: "工具",
+        children: [
+          {
+            title: "Gitlab",
+            addr: "https://about.gitlab.com/",
+          },
+          {
+            title: "SVN",
+            addr: "https://tortoisesvn.net/",
+          },
+        ],
+      },
+    ],
+    },
+  
+  
+];
