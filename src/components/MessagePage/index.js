@@ -2,6 +2,7 @@ import './index.css';
 import Board from './board';
 import EmoList from './emo';
 import { Component } from 'react';
+import FriendLink from './link';
 
 
 class MessagePage extends Component {
@@ -21,6 +22,7 @@ class MessagePage extends Component {
             </div>
             <EmoList />
             <Board />
+            <FriendLink />
         </div>
       )
       }
