@@ -1,5 +1,5 @@
 import { githubHot } from "./data/githubHot"
-import { Carousel } from "antd"
+import { Carousel, Divider } from "antd"
 import { dotColors } from "./data/dotColors"
 import { StarOutlined, GithubOutlined, ForkOutlined } from '@ant-design/icons'
 import 'antd/dist/antd.css'
@@ -22,11 +22,14 @@ export default function GithubCard({ handleClick, isActive }) {
                     <div style={{ color: dotColors[idx % dotColors.length] }}>{e.desc}</div>
                     <div style={{ color: dotColors[idx % dotColors.length] }}>
                       <span>{e.lang}</span>
-                      <span> &nbsp; &nbsp;<StarOutlined style={{color: '#444'}} />{e.stars}</span>
-                      <span> &nbsp; &nbsp;<ForkOutlined style={{color: '#444'}} />{e.forks}</span>
+                      <span> &nbsp; &nbsp;<StarOutlined style={{color: '#444'}} />&nbsp;{e.stars}</span>
+                      <span> &nbsp; &nbsp;<ForkOutlined style={{color: '#444'}} />&nbsp;{e.forks}</span>
                     </div>
                     <div style={{ color: dotColors[idx % dotColors.length] }}>
-                      Built by&nbsp; {e.builder.map((e, idx) => <span key={idx}>{e} &nbsp;</span>)}
+                      <span>{e.builder}</span>
+                    </div>
+                    <div style={{ color: dotColors[idx % dotColors.length] }}>
+                      <span>{e.rankDesc}</span>
                     </div>
                   </div>
                 </a>
