@@ -1,6 +1,6 @@
 import ResourcePage from "./components/ResourcePage";
 import HomePage from "./home";
-import Friend from "./friend";
+import Friend from "./components/Friend";
 import {
   Route,
   useHistory,

@@ -102,7 +102,7 @@ class Friend extends React.Component {
                 })
                 console.log(this.state)
             })
-            alert("提交成功！")
+            // alert("提交成功！")
         })
     }
 
