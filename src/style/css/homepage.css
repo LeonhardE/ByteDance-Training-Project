@@ -23,6 +23,11 @@
   display: block;
 }
 
+.navTop:hover .butt {
+  width: 100px;
+  height: 6px;
+}
+
 .navTop .rightRoute {
   display: none;
   position: absolute;
@@ -35,10 +40,13 @@
   border-radius: 10px;
   background-color: #d6d4d4;
   cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .navTop .rightRoute {
   color: #d6d4d4;
+  cursor: pointer;
 }
 
 
@@ -58,7 +66,7 @@
 
 
 .navBottom {
-  height: 20px;
+  height: 30px;
   width: 100%;
   background-color: black;
   display: -webkit-box;
@@ -68,11 +76,23 @@
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
+
   -ms-flex-pack: center;
   justify-content: center;
   cursor: pointer;
   -webkit-transition: .3s;
   transition: .3s;
+
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.navBottom:hover .butt {
+  width: 100px;
+  height: 7px;
+
 }
 
 
@@ -81,12 +101,18 @@
   height: 5px;
   border-radius: 10px;
   background-color: #d6d4d4;
+
   transition: 0.5s all;
 }
 
 .navBottom:hover {
   height: 40px;
   position: relative;
+
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+
 }
 
 
@@ -103,7 +129,7 @@
 }
 
 .flexContainer .leftButton {
-  width: 15px;
+  width: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,21 +140,29 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .flexContainer .leftButton .butt {
   position: relative;
   bottom: 5px;
-  height: 40px;
-  width: 4px;
+  height: 60px;
+  width: 6px;
   background-color: #d6d4d4;
   border-radius: 4px;
   cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
-.flexContainer .leftList {
-  width: 100px;
-  height: 800px;
+.flexContainer .leftButton:hover {
+  width: 35px;
+}
+
+.flexContainer .leftButton:hover .butt {
+  height: 120px;
+  width: 8px;
 }
 
 .ant-drawer-body {
