@@ -25,17 +25,17 @@
 #left .cardBox {
   padding: 8px;
   width: 25vw;
-  height: 81px;
+  height: 73px;
   border: 3px solid aliceblue;
   border-radius: 20px;
   margin: 8px;
   overflow: hidden;
-  transition: all ease .8s;
+  transition: all ease 1s;
+  flex-shrink: 0;
 }
 
-#left .activeBox,
-#left .card5 {
-  height: 100%;
+#left .activeBox {
+  height: calc(100% - 88px);
 }
 
 #left .activeBox .ant-tabs-content-holder {
@@ -105,4 +105,17 @@
 #left .ant-tabs-tab-btn:hover,
 #left .ant-tabs-tab-active .ant-tabs-tab-btn {
   color: #1890ff;
+}
+
+#left .ant-tabs-nav {
+  margin-bottom: 0;
+}
+
+#left .ant-tabs ul {
+  margin-top: 10px;
+}
+
+#left .activeLink {
+  background-color: #2a2a2a;
+  transition: all ease .3s;
 }
