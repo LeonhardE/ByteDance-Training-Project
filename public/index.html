@@ -28,6 +28,7 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="fish"></div>
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -40,4 +41,15 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script src="%PUBLIC_URL%/webpet/web-pet.js"></script>
+  <script>
+      const MyPet = WebPet.createPet({
+          img_url: '%PUBLIC_URL%/webpet/resources/img/pet.png',
+          happiness_decreasing: {
+              time: 1000,
+              value: 1
+          }
+      })
+      MyPet.mount("#fish")
+  </script>
 </html>
