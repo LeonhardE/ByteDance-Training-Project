@@ -1,0 +1,88 @@
+#left .card1 {
+  display: flex;
+  flex-direction: column;
+}
+
+#left .card1>div {
+  overflow-y: scroll;
+}
+
+#left .github {
+  /* flex: 1; */
+  margin-top: 8px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  height: 100%;
+}
+
+#left .github li {
+  border-bottom: 0;
+}
+
+#left .github a:hover {
+  background-color: #e0e0e0;
+}
+
+#left .github .infoBox {
+  flex: 1;
+  height: 400px;
+  margin: 40px 0;
+  padding: 16px;
+  background-color: #fff;
+  border: 3px solid #131313;
+  border-radius: 20px;
+  color: #000;
+  text-align: center;
+  /* overflow: hidden; */
+  transition: all ease .3s;
+}
+
+#left .github .infoBox div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#left .github .infoBox div div:nth-child(4),
+#left .github .infoBox div div:nth-child(5) {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+
+#left .github .infoBox div div:nth-child(1) {
+  font-size: 22px;
+  font-weight: 500;
+}
+#left .github .infoBox div div:nth-child(2) {
+  margin: 8px 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+#left .github .infoBox div div:nth-child(3) {
+  flex: 1;
+  margin: 8px 0;
+  font-size: 20px;
+}
+
+#left .github button {
+  padding: 3px;
+  border-radius: 50rem;
+}
+
+#left .site-collapse-custom-collapse {
+  margin-top: 8px;
+  background: #131313;
+}
+
+#left .site-collapse-custom-panel {
+  overflow: hidden;
+  border-radius: 5px;
+  background: #131313;
+}
