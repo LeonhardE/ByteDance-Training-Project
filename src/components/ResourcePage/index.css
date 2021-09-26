@@ -2,9 +2,14 @@
   box-sizing: border-box;
 }
 
+#left ::-webkit-scrollbar {
+  display: none;
+}
+
 #left {
-  height: 90vh;
-  padding: 5vh 0;
+  height: 100vh;
+  width: 100vw;
+  padding: 40px 0;
   background-color: #131313;
   display: flex;
   align-items: flex-start;
@@ -18,130 +23,86 @@
 }
 
 #left .cardBox {
-  padding: 1vh;
+  padding: 8px;
   width: 25vw;
+  height: 81px;
   border: 3px solid aliceblue;
-  border-radius: 2vh;
+  border-radius: 20px;
+  margin: 8px;
   overflow: hidden;
-  margin: 1vh;
-  /* transition: all ease 1s; */
+  transition: all ease .8s;
 }
 
-#left .bookmarkBox,
-#left .colBox:nth-child(1) .cardBox:nth-child(1),
-#left .colBox:nth-child(2) .cardBox:nth-child(1) {
-  flex: 1;
+#left .activeBox,
+#left .card5 {
+  height: 100%;
 }
 
-#left .cardBox button {
+#left .activeBox .ant-tabs-content-holder {
+  margin-bottom: 38px;
+}
+
+#left .cardBox>div,
+#left .ant-tabs,
+#left .ant-tabs-content-holder {
+  height: 100%;
+}
+
+#left .ant-tabs-content-holder {
+  overflow: scroll;  
+}
+
+#left .cardBox>button {
   margin: 0;
-  padding: 1vh;
+  padding: 8px;
   width: 100%;
   border: 0;
-  border-radius: 1vh;
+  border-radius: 10px;
   background-color: aliceblue;
   color: #131313;
-  font-size: 3vh;
-  font-weight: 700;
+  font-size: 22px;
+  font-weight: 500;
   letter-spacing: 1px;
   text-align: center;
   white-space: nowrap;
   cursor: pointer;
   outline: none;
 }
-#left .bookmarkBox button {
+#left .card5 button {
   cursor: unset;
 }
 
-#left li {
+#left .cardBox li {
   margin: 0;
-  padding: 4px;
-  font-size: 2.5vh;
-  border-bottom: 1px solid #444;
+  padding: 3px;
+  font-size: 16px;
+  border-bottom: 1px solid #333;
 }
 
-#left li a {
+#left .cardBox li a {
   text-decoration: none;
   color: aliceblue;
 }
 
-#left .githubBox {
-  display: flex;
-  flex-direction: column;
+#left .ant-tabs-nav {
+  margin: 0 8px 8px 0vh;
 }
 
-#left .github {
-  flex: 1;
-  margin-top: 1vh;
-  background-color: #aaa;
-  border-radius: 1vh;
-  display: flex;
-  flex-direction: column;
-  color: #000;
+#left .ant-tabs-tab {
+  margin: 0 8px;
+  padding: 8px 0;
 }
 
-#left .github .infoBox {
-  flex: 1;
-  margin: 4vh 4vh 0 4vh;
-  padding: 2vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
-
-  box-shadow: 0 0 10px #444;
-  border-right: 3px solid #ccc;
-  border-bottom: 3px solid #ccc;
-  border-radius: 2vh;
-  color: #000;
-  text-decoration: none;
-  text-align: center;
-  overflow: hidden;
-  transition: all ease .3s;
+#left .ant-tabs-nav::before {
+  border: 1px solid #444;
+  left: 8px;
 }
 
-#left .github .infoBox div:nth-child(4),
-#left .github .infoBox div:nth-child(5){
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  white-space: nowrap;
+#left .ant-tabs-tab-btn {
+  color: aliceblue;
 }
 
-#left .github a:hover {
-  color: #3460a3;
-}
-
-#left .github .infoBox div:nth-child(1) {
-  font-size: 20px;
-}
-#left .github .infoBox div:nth-child(2) {
-  margin: 1vh 0;
-  font-size: 24px;
-  font-weight: 700;
-}
-#left .github .infoBox div:nth-child(3) {
-  flex: 1;
-  margin: 1vh 0;
-  font-size: 18px;
-}
-
-#left .github ul,
-#left .github li {
-  margin: 0;
-}
-
-#left .github .btnBox {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-#left .github .btnBox button {
-  width: 20vh;
-  height: 5vh;
-  margin-bottom: 1vh;
-  background-color: #ddd;
-  color: #fff;
-  font-size: 18px;
+#left .ant-tabs-tab-btn:hover,
+#left .ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #1890ff;
 }
