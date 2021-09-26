@@ -5,14 +5,32 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        height: 40px;
+
+        .rightRoute {
+            display: block;
+        }
+    }
+
+    .rightRoute {
+        display: none;
+        position: absolute;
+        left:96vw;
+    }
 
     .butt {
         width: 50px;
         height: 5px;
         border-radius: 10px;
         background-color: rgb(214, 212, 212);
-        ;
+        cursor: pointer;
+    }
+
+    .rightRoute {
+        color: rgb(214, 212, 212);
     }
 }
 
