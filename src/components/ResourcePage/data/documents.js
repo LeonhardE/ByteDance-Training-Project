@@ -13,6 +13,10 @@ export const documents = [
             title: "ES6入门教程",
             addr: "https://es6.ruanyifeng.com/",
           },
+          {
+            title: "TypeScript",
+            addr: "https://www.tslang.cn/docs/handbook/basic-types.html",
+          },
         ],
       },
       {
@@ -29,6 +33,26 @@ export const documents = [
           {
             title: "Angular.js",
             addr: "https://angular.cn/",
+          },
+          {
+            title: "Preact.js",
+            addr: "https://www.preactjs.com.cn/",
+          },
+          {
+            title: "React-Native",
+            addr: "https://reactnative.cn/",
+          },
+          {
+            title: "Redux",
+            addr: "https://www.reduxjs.cn/",
+          },
+          {
+            title: "Nuxt.js",
+            addr: "https://www.nuxtjs.cn/",
+          },
+          {
+            title: "Vuex",
+            addr: "https://vuex.vuejs.org/zh/",
           },
         ],
       },
@@ -135,6 +159,18 @@ export const documents = [
             title: "NVM",
             addr: "https://github.com/nvm-sh/nvm",
           },
+          {
+            title: "NPM",
+            addr: "https://www.npmjs.com/",
+          },
+          {
+            title: "Yarn中文网",
+            addr: "https://classic.yarnpkg.com/zh-Hans/",
+          },
+          {
+            title: "CNode社区",
+            addr: "https://cnodejs.org/",
+          },
         ],
       },
       {
@@ -147,6 +183,10 @@ export const documents = [
           {
             title: "Koa",
             addr: "https://www.koajs.com.cn/",
+          },
+          {
+            title: "Hapi",
+            addr: "https://hapi.dev/",
           },
         ],
       },
@@ -162,6 +202,10 @@ export const documents = [
             title: "Typeorm",
             addr: "https://typeorm.io/#/",
           },
+          {
+            title: "Mongoose",
+            addr: "http://www.mongoosejs.net/docs/guide.html",
+          },
         ],
       },
 
@@ -175,6 +219,10 @@ export const documents = [
           {
             title: "EJS",
             addr: "https://ejs.co/",
+          },
+          {
+            title: "Handlebars",
+            addr: "https://handlebarsjs.com/",
           },
         ],
       },
@@ -190,6 +238,10 @@ export const documents = [
             title: "wreck",
             addr: "https://github.com/hapijs/wreck",
           },
+          {
+            title: "Node-fetch",
+            addr: "https://github.com/node-fetch/node-fetch",
+          },
         ],
       },
 
@@ -203,6 +255,10 @@ export const documents = [
           {
             title: "gm",
             addr: "http://aheckmann.github.io/gm/",
+          },
+          {
+            title: "jimp",
+            addr: "https://github.com/oliver-moran/jimp",
           },
         ],
       },
@@ -224,6 +280,10 @@ export const documents = [
             title: "腾讯云",
             addr: "https://cloud.tencent.com/",
           },
+          {
+            title: "华为云",
+            addr: "https://activity.huaweicloud.com/promotion/index.html",
+          },
         ],
       },
       {
@@ -236,6 +296,10 @@ export const documents = [
           {
             title: "MongoDB",
             addr: "https://www.mongodb.com/",
+          },
+          {
+            title: "Redis",
+            addr: "https://redis.io/",
           },
         ],
       },
@@ -250,6 +314,10 @@ export const documents = [
             title: "Mongodb 文档",
             addr: "https://mongoing.com/docs/",
           },
+          {
+            title: "Redis 命令参考",
+            addr: "http://redisdoc.com/",
+          },
         ],
       },
       {
@@ -262,6 +330,10 @@ export const documents = [
           {
             title: "SVN",
             addr: "https://tortoisesvn.net/",
+          },
+          {
+            title: "Docker",
+            addr: "https://docs.docker.com/",
           },
         ],
       },
