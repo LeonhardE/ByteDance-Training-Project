@@ -11,7 +11,22 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.navTop:hover {
+  height: 40px;
+}
+
+.navTop:hover .rightRoute {
+  display: block;
+}
+
+.navTop .rightRoute {
+  display: none;
+  position: absolute;
+  left: 96vw;
 }
 
 .navTop .butt {
@@ -19,6 +34,11 @@
   height: 5px;
   border-radius: 10px;
   background-color: #d6d4d4;
+  cursor: pointer;
+}
+
+.navTop .rightRoute {
+  color: #d6d4d4;
 }
 
 .navBottom {
