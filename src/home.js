@@ -2,7 +2,7 @@ import React from "react";
 
 import "./style/css/homepage.css";
 import { Link } from "react-router-dom";
-import Friend from './friend'
+import Friend from "./components/Friend";
 export default function HomePage() {
     const editorStyle = {
         width: "100vw",
