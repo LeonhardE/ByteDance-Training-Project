@@ -1,0 +1,67 @@
+body{
+    background-color: rgb(207, 207, 207);
+}
+.main{
+    margin: 48px auto;
+    width: 700px;
+    min-height: 600px;
+    padding-bottom: 100px;
+    background-color: #fff;
+}
+
+p{
+    margin: 0;
+}
+
+
+.con{
+    padding: 0 30px;
+    margin: 20px 0;
+    line-height: 36px;
+}
+
+input[type=text]{
+    width: 86%;
+    border: none;
+    border: 1px solid #666;
+    color: #000;
+    min-height: 36px;
+}
+
+.mp{
+    border: 1px solid #666;
+    overflow: hidden;
+    margin: 30px 0;
+    display: block;
+    padding: 16px;
+    box-sizing: border-box;
+    width: 47%;
+    float: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #000;
+}
+.mp img{
+    width: 227px;
+    height: 300px;
+}
+.clear{
+    clear: both;
+}
+.r{
+    float: right;
+}
+.rl{
+    float: right;
+    width: 43%;
+}
+img{
+    display: block;
+    margin: 0 auto;
+}
+.rwbg{
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+    height: 300px;
+}
