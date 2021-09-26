@@ -116,7 +116,6 @@ class Friend extends React.Component {
             <Drawer
               title="单身程序员自救平台"
               width={720}
-              
               onClose={this.onClose}
               visible={this.state.visible}
               bodyStyle={{ paddingBottom: 80, backgroundColor:"rgb(59, 56, 56)"}}
@@ -132,7 +131,7 @@ class Friend extends React.Component {
                   <Col span={12} className="padded-mini">
                     <Form.Item
                       name="性别"
-                      label="性别"
+                      label=""
                       rules={[{ required: true, message: '请选择您的性别' }]}
                     >
                       <Select 
@@ -147,7 +146,7 @@ class Friend extends React.Component {
                   <Col span={12} className="padded-mini">
                     <Form.Item
                       name="年龄"
-                      label="年龄"
+                      label=""
                       rules={[{ required: true, message: '请选择您的年龄段' }]}
                     >
                       <Select 
