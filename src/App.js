@@ -7,11 +7,15 @@ import {
 } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
 import { useEffect } from "react";
+import CommentPage from "./components/CommentPage";
+import MessagePage from "./components/MessagePage";
 
 const routes = [
   { path: "/", name: "HomePage", Component: HomePage },
   { path: "/Friend", name: "Friend", Component: Friend },
   { path: "/ResourcePage", name: "ResourcePage", Component: ResourcePage },
+  { path: "/CommentPage" , name: "CommentPage", Component: CommentPage },
+  { path: "/MessagePage" , name: "MessagePage", Component: MessagePage },
 ];
 
 function App() {

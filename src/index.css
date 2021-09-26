@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* 隐藏scroll */
+body::-webkit-scrollbar{
+  display: none;
+}

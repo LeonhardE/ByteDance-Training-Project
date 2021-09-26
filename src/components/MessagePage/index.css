@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.container .page {
+    padding: 0;
+    height: 100vh;
+    /* overflow-y: hidden; */
+}
+
+#board-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(19, 18, 18, 0.8);
+    position: relative;
+    top: -33px;
+}
+
+
+
+/* 留言板样式 */
+#board-contain {
+    width: 68%;
+    height: 60%;
+    position: relative;
+    top: 6%;
+    left: 30%;
+    /* transform: translateX(-50%); */
+    background: aliceblue;
+    border-radius: 15px;
+    border: solid 1px;
+}
+
+#board-head {
+    color: #131313;
+    font-weight: 700;
+    margin-top: 4px;
+    border-bottom: dashed 1px;
+}
+
+#board-body {
+    width: 100%;
+    height: 75%;
+    border-bottom: dashed 1px;
+    font-size: 22px;
+}
+
+#board-title {
+    margin-top: 50px;
+    font-size: 34px;
+    color: aliceblue;
+    font-weight: 700;
+}
+
+#input-contain {
+    width: 100%;
+    /* margin-left: 125px; */
+    display: flex;
+    margin-top: 15px;
+    transition: 0.3s all;
+}
+
+
+#situation {
+    font-size: 20px;
+    line-height: 25px;
+    margin-left: 40px;
+}
+
+#input {
+    width: 60%;
+    margin-left: 45px;
+}
+
+#send-button {
+    margin-left: 65px;
+   
+}
+
+
+/* EmoList样式 */
+#emo-contain {
+    width: 25%;
+    height: 60.5%;
+    position: absolute;
+    background: aliceblue;
+    margin-left: 28px;
+    top: 12.5%;
+    border-radius: 15px;
+    border: solid 1px;
+}
+
+#left-side-contain {
+    width: 80%;
+    height: 100%;
+    margin-left: 11.2%;
+    margin-top: 21.2%;
+}
+
+#left-side {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#button {
+    width: 8vw;
+    height: 3vw;
+    margin-left: 15px;
+    text-align: center;
+    line-height: 1.8vw;
+    margin-bottom: 30px;
+}
+
+#fishing {
+    width: 2vw;
+    height: 2vw;
+}
+
+#emo-title {
+    font-size: 24px;
+    position: absolute;
+    top: 15px;
+    left: 15%;
+    border-bottom: dashed 1px;
+}
+
+#emo-title span {
+    color: #131313;
+    font-weight: 700;
+}

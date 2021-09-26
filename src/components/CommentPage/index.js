@@ -1,7 +1,7 @@
 import MainPage from './main_page'
 
 
-function App() {
+function CommentPage() {
   return (
     <div className="App">
         <MainPage/>
@@ -9,4 +9,4 @@ function App() {
   );
 }
 
-export default App;
+export default CommentPage;
